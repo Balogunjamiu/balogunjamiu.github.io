@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://marcbruederlin.github.io/particles.js/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0">
+    <title>particles.js – A lightweight, dependency-free and responsive javascript plugin for particle backgrounds.</title>
+    <link rel="icon" type="image/png" href="https://marcbruederlin.github.io/particles.js/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://marcbruederlin.github.io/particles.js/favicon/favicon-16x16.png" sizes="16x16">
+    <link href="./particles.js – A lightweight, dependency-free and responsive javascript plugin for particle backgrounds._files/css" rel="stylesheet">
+    <link href="./particles.js – A lightweight, dependency-free and responsive javascript plugin for particle backgrounds._files/styles.css" rel="stylesheet" type="text/css">
+  <style>._3emE9--dark-theme .-S-tR--ff-downloader{background:rgba(30,30,30,.93);border:1px solid rgba(82,82,82,.54);box-shadow:0 4px 7px rgba(30,30,30,.55);color:#fff}._3emE9--dark-theme .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn{background:#3d4b52}._3emE9--dark-theme .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn:hover{background:#131415}._3emE9--dark-theme .-S-tR--ff-downloader ._10vpG--footer{background:rgba(30,30,30,.93)}._2mDEx--white-theme .-S-tR--ff-downloader{background:#fff;border:1px solid rgba(82,82,82,.54);box-shadow:0 4px 7px rgba(30,30,30,.55);color:#314c75}._2mDEx--white-theme .-S-tR--ff-downloader ._6_Mtt--header{font-weight:700}._2mDEx--white-theme .-S-tR--ff-downloader ._2dFLA--container ._2bWNS--notice{border:0;color:rgba(0,0,0,.88)}._2mDEx--white-theme .-S-tR--ff-downloader ._10vpG--footer{background:#fff}.-S-tR--ff-downloader{display:block;overflow:hidden;position:fixed;bottom:20px;right:7.1%;width:330px;height:180px;background:rgba(30,30,30,.93);border-radius:2px;color:#fff;z-index:99999999;border:1px solid rgba(82,82,82,.54);box-shadow:0 4px 7px rgba(30,30,30,.55);transition:.5s}.-S-tR--ff-downloader._3M7UQ--minimize{height:62px}.-S-tR--ff-downloader._3M7UQ--minimize .nxuu4--file-info,.-S-tR--ff-downloader._3M7UQ--minimize ._6_Mtt--header{display:none}.-S-tR--ff-downloader ._6_Mtt--header{padding:10px;font-size:17px;font-family:sans-serif}.-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn{float:right;background:#f1ecec;height:20px;width:20px;text-align:center;padding:2px;margin-top:-10px;cursor:pointer}.-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn:hover{background:#e2dede}.-S-tR--ff-downloader ._13XQ2--error{color:red;padding:10px;font-size:12px;line-height:19px}.-S-tR--ff-downloader ._2dFLA--container{position:relative;height:100%}.-S-tR--ff-downloader ._2dFLA--container .nxuu4--file-info{padding:6px 15px 0;font-family:sans-serif}.-S-tR--ff-downloader ._2dFLA--container .nxuu4--file-info div{margin-bottom:5px;width:100%;overflow:hidden}.-S-tR--ff-downloader ._2dFLA--container ._2bWNS--notice{margin-top:21px;font-size:11px}.-S-tR--ff-downloader ._10vpG--footer{width:100%;bottom:0;position:absolute;font-weight:700}.-S-tR--ff-downloader ._10vpG--footer ._2V73d--loader{-webkit-animation:n0BD1--rotation 3.5s linear forwards;animation:n0BD1--rotation 3.5s linear forwards;position:absolute;top:-120px;left:calc(50% - 35px);border-radius:50%;border:5px solid #fff;border-top-color:#a29bfe;height:70px;width:70px;display:flex;justify-content:center;align-items:center}.-S-tR--ff-downloader ._10vpG--footer ._24wjw--loading-bar{width:100%;height:18px;background:#dfe6e9;border-radius:5px}.-S-tR--ff-downloader ._10vpG--footer ._24wjw--loading-bar ._1FVu9--progress-bar{height:100%;background:#8bc34a;border-radius:5px}.-S-tR--ff-downloader ._10vpG--footer ._2KztS--status{margin-top:10px}.-S-tR--ff-downloader ._10vpG--footer ._2KztS--status ._1XilH--state{float:left;font-size:.9em;letter-spacing:1pt;text-transform:uppercase;width:100px;height:20px;position:relative}.-S-tR--ff-downloader ._10vpG--footer ._2KztS--status ._1jiaj--percentage{float:right}</style></head>
+
+  <body>
+    <header class="header">
+      <ul class="header__meta">
+        <li>Current version: <strong>2.2.2</strong></li>
+        <li>License: <strong>MIT</strong></li>
+      </ul>
+
+      <div class="container">
+        <div class="header__introduction">
+          <h1>particles.js</h1>
+          <p>A lightweight, dependency-free and responsive javascript plugin for particle backgrounds.</p>
+
+          <div class="buttons">
+            <a class="button button--primary button--download" href="https://github.com/marcbruederlin/particles.js/archive/master.zip">
+              <div class="button__icon"></div>
+              <div class="button__text">
+                <span class="button__action">Download</span>
+                <span class="button__kind">ZIP file</span>
+              </div>
+            </a>
+            <a class="button button--secondary button--github" href="https://github.com/marcbruederlin/particles.js" target="_blank">
+              <div class="button__icon"></div>
+              <div class="button__text">
+                <span class="button__action">View on</span>
+                <span class="button__kind">GitHub</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a class="header__scroll scroll" href="https://marcbruederlin.github.io/particles.js/#documentation">
+        <span class="scroll__text">Documentation</span>
+        <img src="./particles.js – A lightweight, dependency-free and responsive javascript plugin for particle backgrounds._files/arrow-down.svg">
+      </a>
+
+      <canvas class="header__background" width="1358" height="542" style="width: 100%; height: 100%;"></canvas>
+    </header>
+
+    <div class="documentation">
+      <a name="documentation"></a>
+
+      <div class="container container--large">
+        <div class="installation">
+          <a name="installation"></a>
+
+          <h2>Installation</h2>
+          <p>To install particles.js you can <a href="https://github.com/marcbruederlin/particles.js/archive/master.zip">download</a> the latest version, install it via npm:</p>
+
+          <div class="editor">
+            <div class="editor__toolbar">
+              <div class="button"></div>
+              <div class="button"></div>
+              <div class="button"></div>
+            </div>
+            <div class="editor__content">
+              <div class="editor__line line">
+                <span class="line__number line__number--symbol">→</span> npm install particlesjs —-save
+              </div>
+            </div>
+          </div>
+
+          <p>or use the CDN:</p>
+
+          <div class="editor">
+            <div class="editor__toolbar">
+              <div class="button"></div>
+              <div class="button"></div>
+              <div class="button"></div>
+            </div>
+            <div class="editor__content">
+              <div class="editor__line line">
+                <span class="line__number line__number--symbol">→</span>
+                <span>https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="usage">
+          <a name="usage"></a>
+
+          <h2>Usage</h2>
+          <p>Include the minified JS file in your HTML (right before the closing body tag):</p>
+
+          <div class="editor">
+            <div class="editor__toolbar">
+              <div class="button"></div>
+              <div class="button"></div>
+              <div class="button"></div>
+            </div>
+            <div class="editor__content">
+              <div class="editor__line line">
+                <span class="line__number">1</span> <span class="editor__element">&lt;body&gt;</span>
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">2</span> &nbsp;&nbsp;…
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">3</span> &nbsp;&nbsp;<span class="editor__element">&lt;script src=</span><span class="editor__value">"path/to/particles.min.js"</span><span class="editor__element">&gt;&lt;/script&gt;</span>
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">4</span> <span class="editor__element">&lt;/body&gt;</span>
+              </div>
+            </div>
+          </div>
+
+          <p>Add a canvas element to your markup (it should be the last element):</p>
+
+          <div class="editor">
+            <div class="editor__toolbar">
+              <div class="button"></div>
+              <div class="button"></div>
+              <div class="button"></div>
+            </div>
+            <div class="editor__content">
+              <div class="editor__line line">
+                <span class="line__number">1</span> <span class="editor__element">&lt;body&gt;</span>
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">2</span> &nbsp;&nbsp;…
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">3</span> &nbsp;&nbsp;<span class="editor__element">&lt;canvas class=</span><span class="editor__value">"background"</span><span class="editor__element">&gt;&lt;/canvas&gt;</span>
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">4</span> &nbsp;&nbsp;<span class="editor__element">&lt;script src=</span><span class="editor__value">"path/to/particles.min.js"</span><span class="editor__element">&gt;&lt;/script&gt;</span>
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">5</span> <span class="editor__element">&lt;/body&gt;</span>
+              </div>
+            </div>
+          </div>
+
+          <p>Add a few styles to your css:</p>
+
+          <div class="editor">
+            <div class="editor__toolbar">
+              <div class="button"></div>
+              <div class="button"></div>
+              <div class="button"></div>
+            </div>
+            <div class="editor__content">
+              <div class="editor__line line">
+                <span class="line__number">1</span> html, body {
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">2</span> &nbsp;&nbsp;<span class="editor__element">margin</span>:&nbsp;0;
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">3</span> &nbsp;&nbsp;<span class="editor__element">padding</span>:&nbsp;0;
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">4</span> }
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">5</span>
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">6</span> .background {
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">7</span> &nbsp;&nbsp;<span class="editor__element">position</span>: <span class="editor__value">&nbsp;absolute</span>;
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">8</span> &nbsp;&nbsp;<span class="editor__element">display</span>: <span class="editor__value">&nbsp;block</span>;
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">9</span> &nbsp;&nbsp;<span class="editor__element">top</span>:&nbsp;0;
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">10</span> &nbsp;&nbsp;<span class="editor__element">left</span>:&nbsp;0;
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">11</span> &nbsp;&nbsp;<span class="editor__element">z-index</span>:&nbsp;0;
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">12</span> }
+              </div>
+            </div>
+          </div>
+
+          <p>And Initialize the plugin on DOM ready:</p>
+
+          <div class="editor">
+            <div class="editor__toolbar">
+              <div class="button"></div>
+              <div class="button"></div>
+              <div class="button"></div>
+            </div>
+            <div class="editor__content">
+              <div class="editor__line line">
+                <span class="line__number">1</span> window.<span class="editor__element">onload</span> = function() {
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">2</span> &nbsp;&nbsp;Particles.<span class="editor__element">init</span>({
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">3</span> &nbsp;&nbsp;&nbsp;&nbsp;selector:&nbsp;<span class="editor__value">'.background'</span>
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">4</span> &nbsp;&nbsp;});
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">5</span> };
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="options">
+          <a name="options"></a>
+
+          <h2>Options</h2>
+
+          <div style="overflow-x:auto;">
+            <table class="table table--responsive">
+              <thead>
+                <tr>
+                  <th>Option</th>
+                  <th>Type</th>
+                  <th>Default</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>selector</td>
+                  <td>string</td>
+                  <td>-</td>
+                  <td><em>Required:</em> CSS selector of your canvas element</td>
+                </tr>
+                <tr>
+                  <td>maxParticles</td>
+                  <td>integer</td>
+                  <td>100</td>
+                  <td><em>Optional:</em> Maximum amount of particles</td>
+                </tr>
+                <tr>
+                  <td>sizeVariations</td>
+                  <td>integer</td>
+                  <td>3</td>
+                  <td><em>Optional:</em> Amount of size variations</td>
+                </tr>
+                <tr>
+                  <td>speed</td>
+                  <td>integer</td>
+                  <td>0.5</td>
+                  <td><em>Optional:</em> Movement speed of the particles</td>
+                </tr>
+                <tr>
+                  <td>color</td>
+                  <td>string or string[]</td>
+                  <td>#000000</td>
+                  <td><em>Optional:</em> Color(s) of the particles and connecting lines</td>
+                </tr>
+                <tr>
+                  <td>minDistance</td>
+                  <td>integer</td>
+                  <td>120</td>
+                  <td><em>Optional:</em> Distance in px for connecting lines</td>
+                </tr>
+                <tr>
+                  <td>connectParticles</td>
+                  <td>boolean</td>
+                  <td>false</td>
+                  <td><em>Optional:</em> true/false if connecting lines should be drawn</td>
+                </tr>
+                <tr>
+                  <td>responsive</td>
+                  <td>array</td>
+                  <td>null</td>
+                  <td><em>Optional:</em> Array of objects containing breakpoints and options</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <a name="responsive-option"></a>
+          <h3>Responsive option</h3>
+
+          <p>With the responsive option, you can add or override options for different screen sizes:</p>
+
+          <div class="editor">
+            <div class="editor__toolbar">
+              <div class="button"></div>
+              <div class="button"></div>
+              <div class="button"></div>
+            </div>
+            <div class="editor__content">
+              <div class="editor__line line">
+                <span class="line__number">1</span> …
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">2</span> Particles.<span class="editor__element">init</span>({
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">3</span> &nbsp;&nbsp;<span class="editor__comment">// normal options</span>
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">4</span> &nbsp;&nbsp;selector:&nbsp;<span class="editor__value">'.background'</span>,
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">5</span> &nbsp;&nbsp;maxParticles:&nbsp;<span class="editor__value">450</span>,
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">6</span>
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">7</span> &nbsp;&nbsp;<span class="editor__comment">// options for breakpoints</span>
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">8</span> &nbsp;&nbsp;responsive: [
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">9</span> &nbsp;&nbsp;&nbsp;&nbsp;{
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">10</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;breakpoint:&nbsp;<span class="editor__value">768</span>,
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">11</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;options: {
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">12</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maxParticles:&nbsp;<span class="editor__value">200</span>,
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">13</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;<span class="editor__value">'#48F2E3'</span>,
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">14</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;connectParticles:&nbsp;<span class="editor__value">false</span>
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">15</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">16</span> &nbsp;&nbsp;&nbsp;&nbsp;}, {
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">17</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;breakpoint:&nbsp;<span class="editor__value">425</span>,
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">18</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;options: {
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">19</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maxParticles:&nbsp;<span class="editor__value">100</span>,
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">20</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;connectParticles:&nbsp;<span class="editor__value">true</span>
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">21</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">22</span> &nbsp;&nbsp;&nbsp;&nbsp;}, {
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">23</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;breakpoint:&nbsp;<span class="editor__value">320</span>,
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">24</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;options: {
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">25</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maxParticles:&nbsp;<span class="editor__value">0</span>&nbsp;<span class="editor__comment">// disables particles.js</span>
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">26</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">27</span> &nbsp;&nbsp;&nbsp;&nbsp;}
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">28</span> &nbsp;&nbsp;]
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">29</span> });
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">30</span> …
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+        
+        <div class="methods">
+          <a name="methods"></a>
+        
+          <h2>Methods</h2>
+      
+          <div style="overflow-x:auto;">
+            <table class="table table--responsive">
+              <thead>
+                <tr>
+                  <th>Method</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>pauseAnimation</td>
+                  <td>Pauses/stops the particle animation</td>
+                </tr>
+                <tr>
+                  <td>resumeAnimation</td>
+                  <td>Continues the particle animation</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <a name="use-methods"></a>
+          <h3>Use the public methods</h3>
+
+          <div class="editor">
+            <div class="editor__toolbar">
+              <div class="button"></div>
+              <div class="button"></div>
+              <div class="button"></div>
+            </div>
+            <div class="editor__content">
+              <div class="editor__line line">
+                <span class="line__number">1</span> …
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">2</span> <span class="editor__variable">var</span>&nbsp;particles&nbsp;=&nbsp;Particles.<span class="editor__element">init</span>({
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">3</span> &nbsp;&nbsp;<span class="editor__comment">// options</span>
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">4</span> });
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">5</span>
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">6</span> <span class="editor__comment">// E.g. gets called on a button click</span>
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">7</span> <span class="editor__variable">function</span>&nbsp;<span class="editor__element">pause</span>() {
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">8</span> &nbsp;&nbsp;particles.<span class="editor__element">pauseAnimation</span>();
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">9</span> }
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">10</span>
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">11</span> <span class="editor__comment">// E.g. gets called on a button click</span>
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">12</span> <span class="editor__variable">function</span>&nbsp;<span class="editor__element">resume</span>() {
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">13</span> &nbsp;&nbsp;particles.<span class="editor__element">resumeAnimation</span>();
+              </div>
+              <div class="editor__line line">
+                <span class="line__number">14</span> }
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="browser-support">
+          <a name="browser-support"></a>
+
+          <h2>Browser support</h2>
+          <p>particles.js supports all major browsers including IE9+.</p>
+        </div>
+
+        <hr>
+
+        <div class="examples">
+          <a name="examples"></a>
+
+          <h2>Examples</h2>
+          <a target="_blank" href="https://jsfiddle.net/3fn13L7d/13/">Fullscreen background</a><br>
+          <a target="_blank" href="https://jsfiddle.net/m97g98sx/14/">In a fixed width and height container</a><br>
+          <a target="_blank" href="https://jsfiddle.net/m1ffsa4q/5/">Multiple colors</a><br>
+          <a target="_blank" href="https://jsfiddle.net/bg6sbfj2/9/">Use breakpoints</a>
+        </div>
+
+        <hr>
+
+        <div class="donations">
+          <a name="donations"></a>
+
+          <h2>Do you like particles.js?</h2>
+          <p>Help keep this project evolving by donating any amount via <strong>PayPal</strong>.</p>
+
+          <div class="buttons">
+            <a class="button button--large" href="https://www.paypal.me/marcbruederlin/2" target="_blank">$2</a>
+            <a class="button button--large" href="https://www.paypal.me/marcbruederlin/5" target="_blank">$5</a>
+            <a class="button button--large" href="https://www.paypal.me/marcbruederlin/" target="_blank">Custom amount</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container container--large">
+        Build by <a href="https://github.com/marcbruederlin" target="_blank">marcbruederlin</a>
+      </div>
+
+      <a class="footer__scroll" href="https://marcbruederlin.github.io/particles.js/#"><img src="./particles.js – A lightweight, dependency-free and responsive javascript plugin for particle backgrounds._files/arrow-down.svg"></a>
+    </footer>
+
+    <script src="./particles.js – A lightweight, dependency-free and responsive javascript plugin for particle backgrounds._files/particles.min.js"></script>
+    <script>
+      window.onload = function() {
+        Particles.init({
+          selector: '.header__background',
+          color: '#75A5B7',
+          maxParticles: 130,
+          connectParticles: true,
+          responsive: [
+            {
+              breakpoint: 768,
+              options: {
+                maxParticles: 80
+              }
+            }, {
+              breakpoint: 375,
+              options: {
+                maxParticles: 50
+              }
+            }
+          ]
+        });
+      };
+    </script>
+  
+
+</body></html>

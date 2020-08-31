@@ -1,0 +1,443 @@
+body{
+  height: 300px;
+  width: 100vw;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+nav.navbar{
+  padding-right: 55px;
+  padding-left: 55px;
+  background-color: transparent;
+  transition: 1s all ease-out;
+}
+a.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+a.navbar-brand svg {
+  font-size: 25px;
+  margin-right: 6px;
+}
+header {
+  height: 55px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 5px 5px rgb(65, 34, 34);
+}
+.navbar-nav li a {
+  margin-left: 20px;
+}
+.navbar-nav li.nav-item a:first-child {
+  margin: none;
+}
+a.nav-link.active{
+  border-bottom: 2px solid rgb(199, 20, 8);
+  transition: border 1s;
+}
+.container-fluid .row {
+  padding: 0 20px;
+}
+.main {
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100vh;
+  background-image: url(close-up-of-fish-over-black-background-325044.jpg);
+  background-size: cover;
+  background-position: 150px -60px;
+}
+.secondmain{
+  width: 100%;
+  height: 100%;
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#bg {
+  height: inherit;
+}
+#bg .row {
+  height: inherit;
+  align-items: center;
+}
+#bg .row .banner-text {
+  border-left: 3px solid rgb(199, 20, 8);
+  padding: 10px 0 5px 30px;
+  color: rgb(224, 218, 218);
+  position: relative;
+  top: -30px;
+  font-size: 45px;
+}
+#id {
+  font-size: 20px;
+}
+.banner-text h1{
+  font-size: 3.2rem;
+  font-weight: 800;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(223, 223, 223);
+}
+.banner-text h1 span{
+  display: inline-block;
+  transform: scale(0);
+}
+.banner-text h1 span:nth-of-type(5){
+  margin-right: 1.5rem;
+}
+.banner-text h1 span:nth-of-type(1){
+  animation: rubberBand 1s forwards;
+}
+.banner-text h1 span:nth-of-type(2){
+  animation: rubberBand 1s 0.5s forwards
+
+}
+.banner-text h1 span:nth-of-type(3){
+  animation: rubberBand 1s 1s forwards;
+}
+.banner-text h1 span:nth-of-type(4){
+  animation: rubberBand 1s 1.5s forwards;
+}
+.banner-text h1 span:nth-of-type(5){
+  animation: rubberBand 1s 2s forwards;
+}
+.banner-text h1 span:nth-of-type(6){
+  animation: jello 1s 2.3s forwards;
+}
+.banner-text h1 span:nth-of-type(7){
+  animation: jello 1s 2.6s forwards;
+}
+.banner-text h1 span:nth-of-type(8){
+  animation: jello 1s 2.9s forwards;
+}
+.banner-text h1 span:nth-of-type(9){
+  animation: jello 1s 3.2s forwards;
+}
+.banner-text h1 span:nth-of-type(10){
+  animation: jello 1s 3.5s forwards;
+}
+.banner-text h5{
+  font-size: 2rem;
+  animation: flipInY 1.3s 2.7s forwards;
+  font-family: sans-serif;
+  line-height: 40px;
+  letter-spacing: 0.15rem;
+  transform: scale(0);
+}
+.button{
+  /* background-color: rgb(199, 20, 8); */
+  background: transparent;
+  border-radius: 0;
+  margin-top: 30px;
+  width: 150px;
+  padding: 5px;
+  border: 2px solid rgb(150, 13, 4);
+  transition: all 0.5s ease-in-out;
+  
+  font-size: 18px;
+  font-weight: 200;
+  position: relative;
+  color: white;
+  outline: none!important; 
+}
+.button span:not(#text){
+  width: 146px;
+  background: red;
+  position: absolute;
+  top: -1%;
+  height:0;
+  right: 0;
+  transition: all 0.5s;
+}
+.button span#text{
+  position: relative;
+  z-index: 5;
+  font-family: sans-serif;
+}
+.button:hover span:not(#text),
+.button:active .button::before,
+.button:focus .button::before{
+  height: 101%;
+}
+.noleftmargin{
+  margin-left: 0!important;
+}
+.name{
+  /* color: rgb(150, 6, 6); */
+  color: rgb(0, 0, 150);
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+.norightmargin{
+  margin-right: 0!important;
+}
+.underline{
+  width: 80px;
+  height: 4px;
+  background: rgb(199, 20, 8);
+  margin: auto;
+}
+.bar{
+  width: 25px;
+  height: 2px;
+  margin-bottom: 4px;
+  background: white;
+  transition: all 1s ease-out
+}
+.bg-light .bar{
+  background: black;
+}
+.bar:nth-of-type(2){
+  width: 20px;
+}
+.navbar-toggler,.navbar-toggler:focus{
+  outline: none;
+  border: none;
+}
+.section{
+  padding-top: 55px;
+}
+.services{
+  height: 90vh;
+  position: relative;
+  background: rgba(0, 0, 0, 0.959);
+  filter: hue-rotate(10px);
+}
+.background{
+  width:60vw;
+  height: 50vh;
+  background: rgba(36, 36, 36, 0.712);
+  right:0px;
+  top: 15%;
+  position: absolute;
+  padding: 70px 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.stuff{
+  height: 200px;
+  width: 80px;
+  background: rgb(36, 114, 138);
+  position: absolute;
+  left: 0%;
+  transform: translate(-50%, 30%);
+}
+.anotherStuff{
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  background: rgb(211, 17, 17);
+  top: 0;
+  right: 0;
+}
+.background .dots{
+  display: flex;
+  position: absolute;
+  justify-content: space-around;
+  top: 0;
+  width:100%;
+  left:0;
+  margin-top: 3px;
+}
+.dots .dot{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background:white;
+}
+.services h1{
+  position: absolute;
+  color: white;
+  font-size: 5rem;
+  right: 80px;
+  top: 30px;
+  text-shadow: -3px 3px 2px rgb(88, 88, 88);
+}
+.service{
+  color: white;
+  font-size: 25px;
+  font-weight: 200;
+  letter-spacing: 0.15rem;
+  line-height: 2rem;
+  margin-bottom: 30px;
+}
+.illustration{
+  padding-left: 60px;
+  z-index: 2;
+  position: relative;
+  width: 40vw;
+}
+.illustration img{
+  width: 120%;
+  transform: scale(1.2) translate(70px, -50px);
+}
+canvas.background{
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  background: transparent;
+  z-index: 0;
+}
+.skills{
+  padding: 20px;
+  height: 60vh;
+  background: url(images\ \(1\).jpeg) center top fixed;
+  background-size: cover;
+  position: relative;
+}
+.skills .overlay{
+  background: linear-gradient(to left, rgba(133, 18, 18, 0.404), rgba(0, 0, 0, 0.685));
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width:100%;
+}
+.skills h1{
+  text-shadow: 0px 0px 10px darkslategray;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 4rem;
+  z-index:1;
+  position: relative;
+}
+.allSkills{
+  z-index:1;
+  position: relative;
+  width: 70%;
+  margin:auto;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.skills img{
+  width: 150px;
+}
+/* Slideshow Style */
+.slide{
+  width: 40%;
+  position: relative;
+  text-align: center;
+  margin-left: 30%;
+}
+.slide img{
+  display: block;
+}
+.slide-text h3 {
+  margin: 0;
+}
+.cycle-slideshow {
+  margin-bottom: 30px;
+}
+
+.cycle-slideshow:hover .cycle-prev,
+.cycle-slideshow:hover .cycle-next {
+  opacity: 1;
+}
+.cycle-pager{
+  /* position: absolute; */
+  top: 20px;
+  z-index:1003;
+  width: 100%;
+  /* text-align: center; */
+}
+.cycle-pager span {
+  text-indent:-9999px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 4px;
+  cursor: pointer;
+
+}
+.slide-text {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .7);
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+/* Banner overlay */
+.slide1{
+  margin-top: auto;
+  text-align: center;
+  background-color: black;
+  color: #fff;
+}
+.banner-description{
+  position: absolute;
+  bottom:0;
+  left:0;
+  color: #fff;
+  background-color: rgba(0,0,0,.65);
+  padding: 15px 25px;
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 1s;
+  transform: translateY(100%);
+
+}
+.image-banner:hover .banner-description{
+  transform: translateY(0);
+  opacity: 1;
+}
+.cycle-prev, .cycle-next {
+  position: absolute;
+  top: 30%;
+  background-color: rgba(0, 0, 0, .35);
+  color: #fff;
+  padding: 1px 10px;
+  display: block;
+  cursor: pointer;
+  font-size: 130%;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity .5s;
+}
+.cycle-next{
+  right: 0;
+  margin-right: 32.5%;
+}
+.cycle-prev{
+  left: 0;
+  margin-left: 30%;
+}
+.cycle-pager .cycle-pager-active{
+  background-color: black;
+}
+
+
+.about-me{
+  /* height: 300px; */
+  /* width: 100vw; */
+  background: black;
+  color:#fff;
+  text-align: center;
+}
+.about-me img{
+  width: 25%;
+}
+.order-2{
+  padding: 20px 20px;
+  margin-top: 20px;
+  border: 1px solid ;
+
+  
+}
+.project{
+  text-align: center;
+}
