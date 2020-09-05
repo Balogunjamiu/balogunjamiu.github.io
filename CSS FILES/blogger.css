@@ -1,0 +1,237 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+    p{
+        margin: 0px;
+        padding:0px;
+        color:a#787878 ;
+
+    }
+    a{
+        text-decoration: none;
+        color:#d65814 ;
+    }
+    a:hover{
+        text-decoration: none;
+        color: #a93c01;
+        transition: ease-in 1s;
+
+    }
+     header .container{
+         position: absolute;
+     }
+ header .navbar{
+    background: #d65814;
+    border-bottom: 2px solid rgba(0, 0,0, .2);
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, .2);
+    margin-bottom: 0px;
+}
+ header .navbar-default .navbar-nav>li>a , .dropdown{
+    color: #ffffff;
+    padding-bottom: 6px;
+    border-radius: 2px;
+}
+header .navbar-default .navbar-nav>li>a:hover,
+header .navbar-default .navbar-nav>li>a:focus,
+header .navbar-default .navbar-nav>li.open>a:hover,
+header .navbar-default .navbar-nav>li.open>a:focus{
+    background-color:#ffff;
+}
+
+header .navbar-nav .dropdown-menu:after,
+header .navbar-nav .dropdown-menu:before{
+    margin-left: 20px;
+    position: absolute;
+    bottom: 50px;
+    bottom: 100%;
+    pointer-events: none;
+    height: 0px;
+    width: 0px;
+    right: 20%;
+}
+header .navbar-nav .dropdown-menu:before{
+    border-width: 8px;
+    margin-right: -1px;
+}
+.banner{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin-top: 0px;
+    background: #e47133;
+    text-align: center;
+    color:#ffffff;
+    font-weight: 700;
+    font-stretch: normal;
+}
+.banner p{
+    max-width: 700px;
+    margin: auto;
+    color: #dddddd;
+
+}
+header .navbar-brand img {
+    position: relative;
+    top:5px;
+    max-width: 165px;
+}
+#class1, #class2, #class3{
+    padding: 70px;
+}
+#class1 a, #class2 a ,#class3 a {
+    text-decoration: none;
+    color: red;
+}
+.float{
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+#class1 >a ,#class2 >a , #class3>a{
+    text-decoration: none;
+    color: blue;
+}
+.banner2 { 
+   padding:50px;
+   box-sizing: border-box;
+}
+#guitar1, #guitar2 ,#guitar3{
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.banner2 h2{
+    font-weight: 500;
+    color: #554d4d ;
+}
+.caption1>h4, .caption2>h4, .caption3>h4{
+  font-weight: 600;
+  color: orange;
+  font-family: sans-serif;
+}
+.caption1>p>i, .caption2>p>i, .caption3>p>i{
+    color: #9c9a9a;
+    font-size: 85%;
+}
+.caption1>p, .caption2>p, .caption3>p {
+    color: #807a7a;
+}
+#sky1{
+    padding-left: 70px;
+    box-sizing: border-box;
+    
+}
+.banner3 h2{
+    padding-left: 55px;
+    color: #6e6868 ;
+    padding-bottom: 25px;
+}
+.banner3 h4{
+    color: rgb(116, 19, 19);
+    font-weight: 700;
+    padding-top: 10px;
+}
+.banner3 p{
+    color: #807a7a;
+}
+.see {
+    text-align: center;
+    flex-wrap: wrap;
+    padding-top: 35px;
+}
+#see2:hover{
+    transform: scale(.5);
+    background-color: rgb(65, 92, 65);
+}
+.banner4 {
+    text-align: center;
+    background-color: #f3ecec; 
+    padding-bottom: 70px;
+}
+.banner4 h2{
+    padding-top: 70px;
+    color: black;
+    font-weight: 700;
+}
+input[type="email"]{
+    width:40%;
+    height:50px;
+    font-size:20px;
+}
+input[type="submit"]{
+    width:8%;
+    height:50px;
+    font-weight: 600;
+    font-size:15px;
+}
+input[type="submit"]:hover{
+    transition: .5s;
+    background-color: rgb(65, 92, 65);
+}
+.team, img{
+    max-width: 95%;
+}
+.team{
+    margin-left: 50px;
+    margin-left: 50px;
+    box-sizing: border-box;
+    padding-bottom: 100px;
+}
+.team h2{
+    margin-left: -50px;
+    padding-top:50px;
+}
+.new1 > h2, .new2 > h2, .new3 > h2, .new4 > h2 {
+    font-weight: 500;
+    margin-top:-20px;
+    color: rgb(49, 45, 45);
+    font-size:25px;
+}
+.new1 > p,.new2 > p, .new3 > p, .new4 > p {
+    margin-top: -25px;
+    color: rgb(56, 52, 52);
+}
+.new1 > a, .new2 > a,.new3 > a, .new4 > a {
+    color: orangered;
+}
+footer{
+    background-color: #c54805;
+    text-align: center;
+}
+footer, nav > li > a{
+    text-align: center;
+
+}
+.end{
+    word-spacing: 10px;
+    padding-top: 40px;
+    padding-bottom: 150px;
+    padding-right: 100px;
+}
+.end span{
+    color: #fff;
+}
+.end li {
+    list-style:none;
+    margin-right: 5px;
+    float:left;
+    text-align: center;
+    color: #fff;
+}
+footer, .end > li{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding-right: 10px;
+    transition-property:all;
+    transition-duration:1s;
+}
+footer,.end > p > li{
+    color: #fff;
+    margin-bottom: 5px;
+    text-align: center;
+}
+footer,.end > p > li >a{
+    text-decoration: none;
+    color: #fff;
+}

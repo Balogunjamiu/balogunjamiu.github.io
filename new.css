@@ -1,10 +1,10 @@
 body{
-  height: 300px;
+  height: 100vh;
   width: 100vw;
 }
 * {
-  margin: 0;
-  padding: 0;
+  /* margin: 0; */
+  /* padding: 0; */
   box-sizing: border-box;
   font-family: "Montserrat";
 }
@@ -324,17 +324,26 @@ canvas.background{
   width: 150px;
 }
 /* Slideshow Style */
+.main-slide{
+   width: 100%;
+}
 .slide{
-  width: 40%;
+  width: 100%;
   position: relative;
   text-align: center;
   margin-left: 30%;
+  margin-left: 70px;
 }
 .slide img{
+  /* width: 40%; */
   display: block;
+}
+.slide-text{
+  margin-left: -75px;
 }
 .slide-text h3 {
   margin: 0;
+  /* margin-left: -100px; */
 }
 .cycle-slideshow {
   margin-bottom: 30px;
@@ -377,6 +386,7 @@ canvas.background{
   text-align: center;
   background-color: black;
   color: #fff;
+  text-align: center;
 }
 .banner-description{
   position: absolute;
@@ -424,20 +434,190 @@ canvas.background{
 .about-me{
   /* height: 300px; */
   /* width: 100vw; */
-  background: black;
-  color:#fff;
-  text-align: center;
+  background-image: linear-gradient(to bottom, #6d6d70, #e2e2e5);
+  color:#fff; 
+   text-align: center;
 }
 .about-me img{
-  width: 25%;
+  width: 60%;
 }
 .order-2{
-  padding: 20px 20px;
-  margin-top: 20px;
-  border: 1px solid ;
+  padding: 20px 20px 20px 20px;
+  /* border: 1px solid; */
+  margin-left: -30px;
+  max-width:600px;
 
-  
 }
 .project{
   text-align: center;
+  margin-top: -30px;
 }
+.web{
+  text-align: center;
+  background-image: linear-gradient(to bottom,black, #bbbbbb);
+  color: #fff;
+  padding: 20px;
+  margin-bottom:-3.8px;
+  font-weight: 400;
+  font-size: 50px;
+}
+    .web2{
+      text-align: center;
+      background-color: black;
+      padding: 20px;
+      color: #fff;
+      margin-bottom:-3.8px;
+      font-weight: 400;
+      font-size: 50px;
+    }
+.web1{
+  background-color: #919192;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: -3.8px;
+  font-weight: 400;
+  font-size: 50px;
+}
+.grid{
+  background-color: #000000;
+  background-image: linear-gradient(to bottom, #b6b6b8, #909090);
+}
+
+/* FORM */
+@import url('https://rsms.me/inter/inter-ui.css');
+::selection {
+  background: #2D2F36;
+}
+::-webkit-selection {
+  background: #2D2F36;
+}
+::-moz-selection {
+  background: #2D2F36;
+}
+body {
+  background: white;
+  font-family: 'Inter UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+.page {
+  background: #e2e2e5;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 40px);
+  position: absolute;
+  place-content: center;
+  width: calc(100% - 40px);
+}
+@media (max-width: 767px) {
+  .page {
+    height: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+}
+.container {
+  display: flex;
+  height: 320px;
+  margin: 0 auto;
+  width: 640px;
+}
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    height: 630px;
+    width: 320px;
+  }
+}
+.left {
+  background: white;
+  height: calc(100% - 40px);
+  top: 20px;
+  position: relative;
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .left {
+    height: 100%;
+    left: 20px;
+    width: calc(100% - 40px);
+    max-height: 270px;
+  }
+}
+.login {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 50px 40px 40px;
+}
+.eula {
+  color: #999;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 40px;
+}
+.right {
+  background: #474A59;
+  box-shadow: 0px 0px 40px 16px rgba(0,0,0,0.22);
+  color: #F1F1F2;
+  position: relative;
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .right {
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    max-height: 350px;
+  }
+}
+svg {
+  position: absolute;
+  width: 320px;
+}
+path {
+  fill: none;
+  stroke: url(#linearGradient);;
+  stroke-width: 4;
+  stroke-dasharray: 240 1386;
+}
+.form {
+  margin: 40px;
+  position: absolute;
+}
+label {
+  color:  #c2c2c5;
+  display: block;
+  font-size: 14px;
+  height: 16px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+input {
+  background: transparent;
+  border: 0;
+  color: #f2f2f2;
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+  outline: none !important;
+  width: 100%;
+}
+input::-moz-focus-inner { 
+  border: 0; 
+}
+#submit {
+  color: #707075;
+  margin-top: 30px;
+  transition: color 300ms;
+
+}
+#submit:focus {
+  color: #f2f2f2;
+}
+#submit:active {
+  color: #d0d0d2;
+}
+@media (min-width: 767px){
+  .form{
+    margin-top: 10px;
+  }
